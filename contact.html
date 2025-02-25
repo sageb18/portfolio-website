@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- favicon -->
+        <title>sage | contact.</title>
+        <link href="./images/favicon.png" rel="icon" type="image/png">
+
+
+        <!-- css -->
+        <link href="./styles/styles.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+
+    </head>
+
+    <body>
+
+        <!-- navbar -->
+        <header>
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="sage." /></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="projects.html">projects</a></li>
+                    <li><a href="about.html">about</a></li>
+                </ul>
+            </nav>
+            <a class="contact-btn" href="contact.html"><button>contact me</button></a>
+        </header>
+
+        <!-- contact section -->
+        <canvas id="contact-canvas"></canvas>
+        <section class="contact" id="contact">
+            <div class="contact-container">
+                <div class="contact-header">
+                    <h1>contact</h1>
+                    <div class="contact-underline"></div>
+                </div>
+                <div class="contact-text">
+                    <h4>taddeosage@gmail.com
+                    </h4>
+                </div>
+            </div>
+
+            <script>
+                window.addEventListener('DOMContentLoaded', () => {
+                    VANTA.FOG({
+                        el: "#contact",
+                        mouseControls: true,
+                        touchControls: true,
+                        gyroControls: false,
+                        minHeight: 200.00,
+                        minWidth: 200.00,
+                        highlightColor: 0xffffff,
+                        midtoneColor: 0xe8e8e8,
+                        lowlightColor: 0xdcdcdc,
+                        baseColor: 0xa7a7a7,
+                        blurFactor: 0.75,
+                        zoom: 0.70
+                    })
+                })
+            </script>
+    
+        </section>
+    </body>
+
+</html>
